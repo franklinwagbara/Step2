@@ -1,6 +1,5 @@
 ﻿using System;
-
-public class GameLevelCalculator
+public class LevelCalculator
 {
     /// <summary>
     /// Calculates the actual level configuration for a given displayed level.
@@ -11,17 +10,20 @@ public class GameLevelCalculator
     /// <returns>The corresponding actual level configuration.</returns>
     public static int CalculateActualLevel(int displayedLevel)
     {
+        if (displayedLevel < 0)
+        {
+            throw new ArgumentException("Displayed level cannot be negative.");
+        }
+
         if (displayedLevel <= 350)
         {
             return displayedLevel;
         }
 
         int offset = displayedLevel - 351;
-        int cycleLength = 350 - 100 + 1;
-        int actualLevel = 100 + (offset % cycleLength);
-        return actualLevel;
+        return 100 + (offset % 251);
     }
-
+    
     public static void Main(string[] args)
     {
         Console.WriteLine("Result: {0}", CalculateActualLevel(100));

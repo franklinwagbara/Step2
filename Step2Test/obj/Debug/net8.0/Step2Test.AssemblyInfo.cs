@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Step2Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+560b6bee79bf3ccc1f57be7ff1be406be04e67a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Step2Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Step2Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
